@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Игра на запоминание</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="preloader__text" id="preloaderText">Memory Game</div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+
+        <div class="container">
+            <div class="game">
+            <div class="controls">
+                <button>Start</button>
+                <div class="stats">
+                    <div class="moves">0 попыток</div>
+                    <div class="timer">Время: 0 секунд</div>
+                </div>
+            </div>
+            <div class="board-container">
+                <div class="board" data-dimension="4"></div>
+                <div class="win">You won!</div>
+            </div>
+        </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="anim.js"></script>
+    </body>
+</html>
